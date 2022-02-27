@@ -19,7 +19,7 @@
     <div class="mx-auto max-w-5xl px-4">
       <div>
         <div
-          class="pt-24 text-center text-lg font-medium uppercase leading-normal tracking-wider text-neutral-600 dark:text-neutral-400"
+          class="pt-24 text-left text-lg font-medium uppercase leading-normal tracking-wider text-neutral-600 dark:text-neutral-400 md:text-center"
         >
           Karl Emil James Koch
         </div>
