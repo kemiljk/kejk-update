@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="500" height="500"><svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="150" cy="111" r="40" fill="#475569"></circle>
+<circle cx="150" cy="389" r="40" fill="#475569"></circle>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M380.745 85.255C387.306 91.8185 390.993 100.719 390.993 110C390.993 119.281 387.306 128.182 380.745 134.745L265.49 250L380.745 365.255C387.121 371.856 390.648 380.697 390.569 389.874C390.489 399.051 386.808 407.829 380.319 414.319C373.829 420.808 365.051 424.489 355.874 424.569C346.697 424.648 337.856 421.121 331.255 414.745L191.255 274.745C184.694 268.182 181.007 259.281 181.007 250C181.007 240.719 184.694 231.818 191.255 225.255L331.255 85.255C337.818 78.6935 346.719 75.0075 356 75.0075C365.281 75.0075 374.182 78.6935 380.745 85.255Z" fill="#475569"></path>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(0.7407407407407407) brightness(2); } }
+</style></svg>

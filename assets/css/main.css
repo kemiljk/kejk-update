@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .background-blur {
+    backdrop-filter: blur(20px);
+  }
+
+  a {
+    @apply font-semibold text-black underline decoration-indigo-500 decoration-2 underline-offset-4 dark:text-white;
+  }
+
+  h1 {
+    @apply font-display text-3xl font-black leading-snug text-black dark:text-white;
+  }
+
+  h2 {
+    @apply font-display mb-4 text-2xl font-bold leading-snug text-black dark:text-white;
+  }
+
+  h3 {
+    @apply mb-4 pt-4 text-xl font-bold leading-snug text-black dark:text-white;
+  }
+
+  h4 {
+    @apply mb-2 text-base font-bold text-black dark:text-white md:text-xl;
+  }
+
+  p {
+    @apply mb-4 leading-relaxed text-gray-700 dark:text-gray-300;
+  }
+
+  ul {
+    @apply ml-8 mb-4 list-disc text-gray-700 dark:text-gray-300;
+  }
+
+  ol {
+    @apply ml-8 mb-4 list-decimal text-gray-700 dark:text-gray-300;
+  }
+
+  blockquote {
+    @apply my-4 ml-4 border-l-4 border-neutral-200 italic dark:border-neutral-800;
+  }
+
+  blockquote p {
+    @apply ml-4 text-neutral-500 dark:text-neutral-300;
+  }
+
+  pre {
+    @apply w-full overflow-x-scroll whitespace-pre rounded-xl bg-neutral-50 font-mono dark:bg-neutral-900;
+  }
+
+  pre > code {
+    @apply font-mono;
+  }
+
+  code {
+    @apply w-max rounded-md bg-neutral-100 py-1 px-2 font-mono text-sm dark:bg-neutral-800;
+  }
+
+  code > span {
+    @apply font-mono;
+  }
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
+
+@layer components {
+  img {
+    @apply rounded-xl;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

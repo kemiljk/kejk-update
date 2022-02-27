@@ -1,0 +1,68 @@
+<template>
+  <div
+    class="w-full rounded-3xl bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+  >
+    <a
+      :href="software.metadata.url"
+      target="`_blank"
+      rel="noreferrer"
+      class="no-underline"
+    >
+      <div class="flex flex-col justify-between">
+        <header class="mb-4 flex justify-between">
+          <img
+            :src="software.metadata.cover.imgix_url"
+            class="max-h-24 rounded-md"
+            alt="Image of software"
+          />
+          <arrow-up-right-icon
+            class="shrink-0 text-neutral-700 dark:text-neutral-300"
+            size="1x"
+          ></arrow-up-right-icon>
+        </header>
+        <div
+          class="divide-y divide-solid divide-neutral-300 dark:divide-neutral-800"
+        >
+          <div class="mb-4 flex space-x-2">
+            <Tag v-if="software.metadata.indie" color="yellow"> Indie </Tag>
+            <Tag v-if="software.metadata.open_source" color="purple">
+              Open source
+            </Tag>
+            <Tag v-if="software.metadata.company" color="red">
+              {{ software.metadata.company }}
+            </Tag>
+          </div>
+          <h4
+            class="pt-4 text-sm font-bold text-neutral-900 dark:text-neutral-100"
+          >
+            {{ software.title }}
+          </h4>
+        </div>
+        <p
+          class="mb-0 pt-1 text-sm font-normal text-neutral-500 dark:text-neutral-400"
+        >
+          {{ software.metadata.subtitle }}
+        </p>
+      </div>
+    </a>
+  </div>
+</template>
+
+<script>
+import { ArrowUpRightIcon } from "vue-feather-icons";
+
+export default {
+  name: "Software",
+  components: {
+    ArrowUpRightIcon,
+  },
+  props: {
+    software: {
+      type: Object,
+      default: () => {
+        "No posts are loaded";
+      },
+    },
+  },
+};
+</script>
