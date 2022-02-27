@@ -41,7 +41,7 @@
         </div>
         <ViewsPortfolio :portfolio="portfolio" />
         <div class="flex flex-row pt-16">
-          <BackLink link="portfolio"> Back to all</BackLink>
+          <BackLink link="project"> Back to all</BackLink>
         </div>
         <div
           class="mt-16 border-t-2 border-neutral-200 pb-16 dark:border-neutral-800"
