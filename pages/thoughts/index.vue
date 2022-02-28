@@ -56,7 +56,7 @@
 
 <script>
 import { ArrowUpRightIcon } from 'vue-feather-icons'
-import { createMeta } from '~/utils/createMeta'
+import { createMeta } from '~/utils/createMeta.js'
 import All from '../../components/Tabs/All'
 import Design from '../../components/Tabs/Design'
 import Development from '../../components/Tabs/Development'
@@ -74,35 +74,26 @@ export default {
     Links,
     ArrowUpRightIcon,
   },
-  computed: {
-    meta() {
-      const metaData = {
-        title: 'Thoughts | KEJK',
-        description:
-          'Thoughts on Design and Development from here and around the web.',
-        url: 'https://kejk.tech/thoughts',
-        mainImage:
-          'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
-      }
-      return getSiteMeta(metaData)
-    },
-    blogs() {
-      let blogs = this.$store.getters.getBlog
-      let blogList = []
-
-      blogs.forEach(function (blog) {
-        blogList.push(blog)
-      })
-
-      return { blogList: blogList }
-    },
-  },
   head() {
-    return {
+    return createMeta({
       title: 'Thoughts | KEJK',
-      meta: [...this.meta],
+      description:
+        'Thoughts on Design and Development from here and around the web.',
+      imageUrl:
+        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+      url: 'https://kejk.tech/thoughts',
       link: [{ rel: 'canonical', href: 'https://kejk.tech/thoughts' }],
-    }
+    })
+  },
+  blogs() {
+    let blogs = this.$store.getters.getBlog
+    let blogList = []
+
+    blogs.forEach(function (blog) {
+      blogList.push(blog)
+    })
+
+    return { blogList: blogList }
   },
   data() {
     return {

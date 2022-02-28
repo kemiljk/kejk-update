@@ -8,17 +8,7 @@
 // const twitterSite = '@_kejk'
 // const twitterCard = 'summary_large_image'
 
-export const createMeta = ({
-  title,
-  description,
-  imageUrl,
-  url,
-}: {
-  title: string
-  description: string
-  imageUrl: string
-  url: string
-}) => {
+export const createMeta = ({ title, description, imageUrl, url }) => {
   const metaObj = {
     meta: [
       {

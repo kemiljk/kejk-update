@@ -75,7 +75,7 @@
 
 <script>
 import { ArrowUpRightIcon } from 'vue-feather-icons'
-import { createMeta } from '~/utils/createMeta'
+import { createMeta } from '~/utils/createMeta.js'
 
 const Cosmic = require('cosmicjs')
 const api = Cosmic()
@@ -85,7 +85,6 @@ const bucket = api.bucket({
 })
 
 export default {
-  computed: {},
   head() {
     return createMeta({
       title: 'Uses | KEJK',

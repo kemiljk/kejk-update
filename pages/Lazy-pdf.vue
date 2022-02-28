@@ -216,7 +216,7 @@
 </template>
 
 <script>
-import { createMeta } from '~/utils/createMeta'
+import { createMeta } from '~/utils/createMeta.js'
 import { DownloadIcon, ArrowUpRightIcon, HeartIcon } from 'vue-feather-icons'
 
 const Cosmic = require('cosmicjs')
@@ -234,24 +234,16 @@ export default {
     ArrowUpRightIcon,
     HeartIcon,
   },
-  computed: {
-    meta() {
-      const metaData = {
-        title: 'Lazy PDF | KEJK',
-        description: 'Effortless and interfaceless PDF creation.',
-        url: 'https://kejk.tech/lazy-pdf',
-        mainImage:
-          'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
-      }
-      return getSiteMeta(metaData)
-    },
-  },
   head() {
-    return {
+    return createMeta({
       title: 'Lazy PDF | KEJK',
-      meta: [...this.meta],
+      description:
+        'Effortlessly create a PDF from a set of selected images through an interfaceless system with only the Finder selection UI.',
+      imageUrl:
+        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+      url: 'https://kejk.tech/lazy-pdf',
       link: [{ rel: 'canonical', href: 'https://kejk.tech/lazy-pdf' }],
-    }
+    })
   },
   created() {
     this.getDownloadData()

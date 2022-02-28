@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { createMeta } from '~/utils/createMeta'
+import { createMeta } from '~/utils/createMeta.js'
 import { TwitterIcon } from 'vue-feather-icons'
 import { LinkedinIcon } from 'vue-feather-icons'
 
@@ -41,29 +41,14 @@ export default {
     TwitterIcon,
     LinkedinIcon,
   },
-  computed: {
-    meta() {
-      const metaData = {
-        type: 'blog',
-        title: this.blog.title,
-        description: this.blog.metadata.snippet,
-        url: 'https://kejk.tech/thoughts/' + `${this.$route.params.id}`,
-        mainImage: this.blog.metadata.hero.imgix_url,
-      }
-      return getSiteMeta(metaData)
-    },
-  },
   head() {
-    return {
+    return createMeta({
       title: this.blog.title,
-      meta: [...this.meta],
-      link: [
-        {
-          rel: 'canonical',
-          href: `https://kejk.tech/thoughts/${this.$route.params.id}`,
-        },
-      ],
-    }
+      description: this.blog.metadata.snippet,
+      imageUrl: this.blog.metadata.hero.imgix_url,
+      url: 'https://kejk.tech/thoughts/' + `${this.$route.params.id}`,
+      link: [{ rel: 'canonical', href: 'https://kejk.tech/thoughts' }],
+    })
   },
 }
 </script>
