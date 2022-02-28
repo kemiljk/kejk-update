@@ -74,18 +74,16 @@ export default {
     Links,
     ArrowUpRightIcon,
   },
-  computed: {
-    head() {
-      return createMeta({
-        title: 'Thoughts | KEJK',
-        description:
-          'Thoughts on Design and Development from here and around the web.',
-        imageUrl:
-          'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
-        url: 'https://kejk.tech/thoughts',
-        link: [{ rel: 'canonical', href: 'https://kejk.tech/thoughts' }],
-      })
-    },
+  head() {
+    return createMeta({
+      title: 'Thoughts | KEJK',
+      description:
+        'Thoughts on Design and Development from here and around the web.',
+      imageUrl:
+        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+      url: 'https://kejk.tech/thoughts',
+      link: [{ rel: 'canonical', href: 'https://kejk.tech/thoughts' }],
+    })
   },
   blogs() {
     let blogs = this.$store.getters.getBlog
