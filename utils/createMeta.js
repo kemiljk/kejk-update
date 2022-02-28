@@ -17,8 +17,8 @@ export const createMeta = ({ title, description, imageUrl, url }) => {
         content: description,
       },
       {
-        hid: 'twitter:image',
-        name: 'twitter:image',
+        hid: 'twitter:image:src',
+        name: 'twitter:image:src',
         content: imageUrl,
       },
       {
