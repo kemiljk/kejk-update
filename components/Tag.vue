@@ -21,8 +21,7 @@ export default {
         pink: 'text-pink-700 dark:text-pink-200 bg-pink-50 dark:bg-pink-900/30 border border-pink-200 dark:border-pink-900',
         green:
           'text-green-700 dark:text-green-200 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green9700',
-        indigo:
-          'text-indigo-700 dark:text-indigo-200 bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-900',
+        teal: 'text-teal-700 dark:text-teal-200 bg-teal-50 dark:bg-teal-900/30 border border-teal-200 dark:border-teal-900',
         blue: 'text-blue-700 dark:text-blue-200 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-900',
       }[this.color]
     },

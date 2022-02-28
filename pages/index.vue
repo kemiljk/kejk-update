@@ -73,7 +73,7 @@
           <div
             class="flex pt-4 text-sm font-bold text-neutral-800 dark:text-neutral-200"
           >
-            Full-time <span class="ml-2 font-mono text-indigo-500">———</span>
+            Full-time <span class="ml-2 font-mono text-teal-500">———</span>
           </div>
           <IconText class="flex items-center">
             <template #icon>
@@ -110,7 +110,7 @@
           <div
             class="flex pt-8 text-sm font-bold text-neutral-800 dark:text-neutral-200 md:pt-4"
           >
-            On the side <span class="ml-2 font-mono text-indigo-500">———</span>
+            On the side <span class="ml-2 font-mono text-teal-500">———</span>
           </div>
           <IconText class="flex items-center">
             <template #icon>

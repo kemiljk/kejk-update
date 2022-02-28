@@ -6,11 +6,11 @@
           {{ blog.title }}
         </Header>
         <div class="flex items-center justify-start space-x-2 pt-2">
-          <Tag color="indigo">
+          <Tag color="teal">
             {{ blog.metadata.tag }}
           </Tag>
           <p class="mb-0 font-mono text-neutral-500 dark:text-neutral-400">
-            Updated {{ blog.modified_at | moment("from", "now") }}
+            Updated {{ blog.modified_at | moment('from', 'now') }}
           </p>
         </div>
       </div>
@@ -25,12 +25,12 @@
 </template>
 
 <script>
-import getSiteMeta from "~/utils/getSiteMeta.js";
-import { TwitterIcon } from "vue-feather-icons";
-import { LinkedinIcon } from "vue-feather-icons";
+import getSiteMeta from '~/utils/getSiteMeta.js'
+import { TwitterIcon } from 'vue-feather-icons'
+import { LinkedinIcon } from 'vue-feather-icons'
 
 export default {
-  name: "Blog",
+  name: 'Blog',
   props: {
     blog: {
       type: Object,
@@ -44,13 +44,13 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        type: "blog",
+        type: 'blog',
         title: this.blog.title,
         description: this.blog.metadata.snippet,
-        url: "https://kejk.tech/thoughts/" + `${this.$route.params.id}`,
+        url: 'https://kejk.tech/thoughts/' + `${this.$route.params.id}`,
         mainImage: this.blog.metadata.hero.imgix_url,
-      };
-      return getSiteMeta(metaData);
+      }
+      return getSiteMeta(metaData)
     },
   },
   head() {
@@ -59,11 +59,11 @@ export default {
       meta: [...this.meta],
       link: [
         {
-          rel: "canonical",
+          rel: 'canonical',
           href: `https://kejk.tech/thoughts/${this.$route.params.id}`,
         },
       ],
-    };
+    }
   },
-};
+}
 </script>

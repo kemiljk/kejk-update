@@ -38,11 +38,11 @@
           href="https://changelog.kejk.tech"
           target="_blank"
         >
-          <Button color="indigo" class="w-full sm:w-max">
+          <Button color="teal" class="w-full sm:w-max">
             <template #icon>
               <arrow-up-right-icon
                 size="1x"
-                class="mr-2 inline-block text-indigo-50"
+                class="mr-2 inline-block text-teal-50"
               />
             </template>
             <template #label> My personal changelog </template>
@@ -53,7 +53,7 @@
             <template #icon>
               <arrow-right-icon
                 size="1x"
-                class="mr-2 inline-block text-indigo-50 dark:text-neutral-900"
+                class="mr-2 inline-block text-teal-50 dark:text-neutral-900"
               />
             </template>
             <template #label> What I use to get work done </template>

@@ -25,7 +25,7 @@
         >
           {{ feature.metadata.published | moment('DD/MM/YYYY') }}
         </p>
-        <p class="mb-0 font-mono text-sm text-indigo-500">
+        <p class="mb-0 font-mono text-sm text-teal-500">
           {{ feature.metadata.type }}
         </p>
       </div>

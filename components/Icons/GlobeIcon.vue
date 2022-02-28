@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-100"
+    class="flex h-12 w-12 items-center justify-center rounded-full bg-teal-100"
   >
-    <globe-icon size="1x" class="text-indigo-800" />
+    <globe-icon size="1x" class="text-teal-800" />
   </div>
 </template>
 

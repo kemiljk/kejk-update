@@ -39,7 +39,7 @@
                 name="email"
                 id="email"
                 placeholder="e.g. arnold@schwarzenegger.com"
-                class="w-100 mt-2 rounded-md border border-neutral-200 bg-white py-3 px-3 text-neutral-800 focus:border focus:border-indigo-500 focus:outline-none dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
+                class="w-100 mt-2 rounded-md border border-neutral-200 bg-white py-3 px-3 text-neutral-800 focus:border focus:border-teal-500 focus:outline-none dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
                 required
               />
             </div>
@@ -56,7 +56,7 @@
                 id="message"
                 rows="4"
                 placeholder="Ask me anything"
-                class="w-100 mt-2 rounded-md border border-neutral-200 bg-white py-3 px-3 text-neutral-800 focus:border focus:border-indigo-500 focus:outline-none dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
+                class="w-100 mt-2 rounded-md border border-neutral-200 bg-white py-3 px-3 text-neutral-800 focus:border focus:border-teal-500 focus:outline-none dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
                 required
               />
             </div>
