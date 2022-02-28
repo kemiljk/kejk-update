@@ -12,6 +12,7 @@ export default {
     title: 'KEJK — Product Designer and Developer',
     meta: [
       { charset: 'utf-8' },
+      { contentType: 'text/html' },
       { name: 'HandheldFriendly', content: 'True' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
