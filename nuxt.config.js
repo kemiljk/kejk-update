@@ -80,15 +80,15 @@ export default {
         content: 'Human-first Product Designer and Developer.',
       },
       {
-        hid: 'twitter:image:src',
-        name: 'twitter:image:src',
+        hid: 'twitter:image',
+        name: 'twitter:image',
         content:
           'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
       },
     ],
     link: [
       { rel: 'icon', href: '/favicon.svg' },
-      { rel: 'icon', href: '/favicon.svg' },
+      { rel: 'icon', href: '/favicon.ico' },
       { rel: 'mask-icon', href: '/mask-icon.svg', color: '#667EEA' },
       {
         rel: 'apple-touch-icon',
