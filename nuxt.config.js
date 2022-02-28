@@ -41,7 +41,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://www.kejk.tech',
+        content: 'https://kejk.tech',
       },
       {
         hid: 'og:title',
@@ -68,7 +68,7 @@ export default {
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: 'https://www.kejk.tech',
+        content: 'https://kejk.tech',
       },
       {
         hid: 'twitter:title',

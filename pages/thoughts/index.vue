@@ -92,7 +92,6 @@ export default {
     blogs.forEach(function (blog) {
       blogList.push(blog)
     })
-
     return { blogList: blogList }
   },
   data() {
