@@ -22,7 +22,7 @@ export const createMeta = ({ title, description, imageUrl, url }) => {
 				content: imageUrl,
 			},
 			{
-				property: 'twitter:image',
+				name: 'twitter:image',
 				content: imageUrl,
 			},
 			{

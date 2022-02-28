@@ -79,7 +79,7 @@ export default {
 			},
 			{
 				// hid: 'twitter:image:src',
-				property: 'twitter:image',
+				name: 'twitter:image',
 				content:
 					'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
 			},
