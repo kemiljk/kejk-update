@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import getSiteMeta from '~/utils/getSiteMeta.js'
+import { createMeta } from '~/utils/createMeta'
 import { TwitterIcon } from 'vue-feather-icons'
 import { LinkedinIcon } from 'vue-feather-icons'
 

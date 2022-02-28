@@ -75,7 +75,7 @@
 
 <script>
 import { ArrowUpRightIcon } from 'vue-feather-icons'
-import getSiteMeta from '~/utils/getSiteMeta.js'
+import { createMeta } from '~/utils/createMeta'
 
 const Cosmic = require('cosmicjs')
 const api = Cosmic()
@@ -85,24 +85,17 @@ const bucket = api.bucket({
 })
 
 export default {
-  computed: {
-    meta() {
-      const metaData = {
-        title: 'Uses | KEJK',
-        description: "Karl's Product Design and Development EDC and equipment",
-        url: 'https://kejk.tech/uses',
-        mainImage:
-          'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
-      }
-      return getSiteMeta(metaData)
-    },
-  },
+  computed: {},
   head() {
-    return {
+    return createMeta({
       title: 'Uses | KEJK',
-      meta: [...this.meta],
+      description:
+        'Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.',
+      imageUrl:
+        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+      url: 'https://kejk.tech/uses',
       link: [{ rel: 'canonical', href: 'https://kejk.tech/uses' }],
-    }
+    })
   },
   components: {
     ArrowUpRightIcon,

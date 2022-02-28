@@ -216,7 +216,7 @@
 </template>
 
 <script>
-import getSiteMeta from '~/utils/getSiteMeta.js'
+import { createMeta } from '~/utils/createMeta'
 import { DownloadIcon, ArrowUpRightIcon, HeartIcon } from 'vue-feather-icons'
 
 const Cosmic = require('cosmicjs')

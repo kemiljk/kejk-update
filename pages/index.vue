@@ -216,7 +216,7 @@ import {
   ArrowRightIcon,
   ArrowUpRightIcon,
 } from 'vue-feather-icons'
-import getSiteMeta from '~/utils/getSiteMeta.js'
+import { createMeta } from '~/utils/createMeta'
 
 const Cosmic = require('cosmicjs')
 const api = Cosmic()

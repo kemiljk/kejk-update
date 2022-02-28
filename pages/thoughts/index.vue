@@ -56,7 +56,7 @@
 
 <script>
 import { ArrowUpRightIcon } from 'vue-feather-icons'
-import getSiteMeta from '~/utils/getSiteMeta.js'
+import { createMeta } from '~/utils/createMeta'
 import All from '../../components/Tabs/All'
 import Design from '../../components/Tabs/Design'
 import Development from '../../components/Tabs/Development'
