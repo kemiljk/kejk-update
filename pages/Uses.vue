@@ -85,16 +85,18 @@ const bucket = api.bucket({
 })
 
 export default {
-  head() {
-    return createMeta({
-      title: 'Uses | KEJK',
-      description:
-        'Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.',
-      imageUrl:
-        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
-      url: 'https://kejk.tech/uses',
-      link: [{ rel: 'canonical', href: 'https://kejk.tech/uses' }],
-    })
+  computed: {
+    head() {
+      return createMeta({
+        title: 'Uses | KEJK',
+        description:
+          'Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.',
+        imageUrl:
+          'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+        url: 'https://kejk.tech/uses',
+        link: [{ rel: 'canonical', href: 'https://kejk.tech/uses' }],
+      })
+    },
   },
   components: {
     ArrowUpRightIcon,

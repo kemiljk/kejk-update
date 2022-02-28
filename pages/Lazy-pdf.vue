@@ -234,16 +234,18 @@ export default {
     ArrowUpRightIcon,
     HeartIcon,
   },
-  head() {
-    return createMeta({
-      title: 'Lazy PDF | KEJK',
-      description:
-        'Effortlessly create a PDF from a set of selected images through an interfaceless system with only the Finder selection UI.',
-      imageUrl:
-        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
-      url: 'https://kejk.tech/lazy-pdf',
-      link: [{ rel: 'canonical', href: 'https://kejk.tech/lazy-pdf' }],
-    })
+  computed: {
+    head() {
+      return createMeta({
+        title: 'Lazy PDF | KEJK',
+        description:
+          'Effortlessly create a PDF from a set of selected images through an interfaceless system with only the Finder selection UI.',
+        imageUrl:
+          'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+        url: 'https://kejk.tech/lazy-pdf',
+        link: [{ rel: 'canonical', href: 'https://kejk.tech/lazy-pdf' }],
+      })
+    },
   },
   created() {
     this.getDownloadData()

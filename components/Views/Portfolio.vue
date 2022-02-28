@@ -32,14 +32,16 @@ export default {
       default: () => {},
     },
   },
-  head() {
-    return createMeta({
-      title: this.portfolio.title,
-      description: this.portfolio.metadata.description,
-      imageUrl: this.portfolio.metadata.featured.imgix_url,
-      url: 'https://kejk.tech/projects/' + `${this.$route.params.id}`,
-      link: [{ rel: 'canonical', href: 'https://kejk.tech/projects' }],
-    })
+  computed: {
+    head() {
+      return createMeta({
+        title: this.portfolio.title,
+        description: this.portfolio.metadata.description,
+        imageUrl: this.portfolio.metadata.featured.imgix_url,
+        url: 'https://kejk.tech/projects/' + `${this.$route.params.id}`,
+        link: [{ rel: 'canonical', href: 'https://kejk.tech/projects' }],
+      })
+    },
   },
 }
 </script>

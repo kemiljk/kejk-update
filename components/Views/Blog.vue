@@ -41,14 +41,16 @@ export default {
     TwitterIcon,
     LinkedinIcon,
   },
-  head() {
-    return createMeta({
-      title: this.blog.title,
-      description: this.blog.metadata.snippet,
-      imageUrl: this.blog.metadata.hero.imgix_url,
-      url: 'https://kejk.tech/thoughts/' + `${this.$route.params.id}`,
-      link: [{ rel: 'canonical', href: 'https://kejk.tech/thoughts' }],
-    })
+  computed: {
+    head() {
+      return createMeta({
+        title: this.blog.title,
+        description: this.blog.metadata.snippet,
+        imageUrl: this.blog.metadata.hero.imgix_url,
+        url: 'https://kejk.tech/thoughts/' + `${this.$route.params.id}`,
+        link: [{ rel: 'canonical', href: 'https://kejk.tech/thoughts' }],
+      })
+    },
   },
 }
 </script>

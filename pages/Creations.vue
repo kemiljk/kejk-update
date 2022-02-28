@@ -70,16 +70,18 @@ const bucket = api.bucket({
 
 export default {
   name: 'CreationsGrid',
-  head() {
-    return createMeta({
-      title: 'Creations | KEJK',
-      description:
-        'A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.',
-      imageUrl:
-        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
-      url: 'https://kejk.tech/creations',
-      link: [{ rel: 'canonical', href: 'https://kejk.tech/creations' }],
-    })
+  computed: {
+    head() {
+      return createMeta({
+        title: 'Creations | KEJK',
+        description:
+          'A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.',
+        imageUrl:
+          'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+        url: 'https://kejk.tech/creations',
+        link: [{ rel: 'canonical', href: 'https://kejk.tech/creations' }],
+      })
+    },
   },
   components: {
     InfoIcon,
