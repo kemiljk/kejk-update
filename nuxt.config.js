@@ -31,11 +31,6 @@ export default {
         media: '(prefers-color-scheme: dark)',
         content: 'black',
       },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Product Designer and Frontend Developer',
-      },
       { property: 'og:site_name', content: 'KEJK' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -61,7 +56,6 @@ export default {
       },
       { property: 'og:image:width', content: '740' },
       { property: 'og:image:height', content: '300' },
-
       { name: 'twitter:site', content: '@_kejk' },
       { name: 'twitter:creator', content: '@_kejk' },
       { name: 'twitter:card', content: 'summary_large_image' },
