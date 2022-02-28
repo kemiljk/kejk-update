@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full rounded-3xl bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+    class="w-full rounded-md border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg dark:border-neutral-800 dark:hover:bg-neutral-900"
   >
     <a
       :href="tool.metadata.url"
@@ -49,10 +49,10 @@
 </template>
 
 <script>
-import { ArrowUpRightIcon } from "vue-feather-icons";
+import { ArrowUpRightIcon } from 'vue-feather-icons'
 
 export default {
-  name: "Tools",
+  name: 'Tools',
   components: {
     ArrowUpRightIcon,
   },
@@ -60,9 +60,9 @@ export default {
     tool: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>

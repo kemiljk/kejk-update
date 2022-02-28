@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="plugin.title"
-    class="max-w-5/6 w-full cursor-pointer rounded-3xl bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+    class="max-w-5/6 w-full cursor-pointer rounded-md bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
   >
     <a
       :href="plugin.metadata.url"
@@ -42,10 +42,10 @@
 </template>
 
 <script>
-import { ArrowUpRightIcon } from "vue-feather-icons";
+import { ArrowUpRightIcon } from 'vue-feather-icons'
 
 export default {
-  name: "PluginCard",
+  name: 'PluginCard',
   components: {
     ArrowUpRightIcon,
   },
@@ -55,5 +55,5 @@ export default {
       default: () => {},
     },
   },
-};
+}
 </script>

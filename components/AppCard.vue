@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="app.metadata.url"
-    class="max-w-5/6 w-full cursor-pointer rounded-3xl bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+    class="max-w-5/6 w-full cursor-pointer rounded-md bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
   >
     <a
       :href="app.metadata.url"
@@ -14,12 +14,12 @@
           <div class="mr-4 sm:w-1/3">
             <img
               :src="app.metadata.cover.imgix_url"
-              class="hidden max-h-32 rounded-md md:block"
+              class="hidden max-h-32 rounded md:block"
               alt="Image of media"
             />
             <img
               :src="app.metadata.mobile_image.imgix_url"
-              class="block max-h-32 rounded-md md:hidden"
+              class="block max-h-32 rounded md:hidden"
               alt="Image of media"
             />
           </div>
@@ -60,7 +60,7 @@
   <div v-else>
     <nuxt-link :to="app.metadata.to" rel="noreferrer" cursor="pointer">
       <button
-        class="w-full rounded-3xl bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white dark:bg-neutral-900 dark:hover:bg-neutral-800"
+        class="w-full rounded-md bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white dark:bg-neutral-900 dark:hover:bg-neutral-800"
       >
         <div class="p-4">
           <header class="flex justify-between">
@@ -68,12 +68,12 @@
               <div class="mr-4 sm:w-1/3">
                 <img
                   :src="app.metadata.cover.imgix_url"
-                  class="hidden max-h-32 rounded-md md:block"
+                  class="hidden max-h-32 rounded md:block"
                   alt="Image of media"
                 />
                 <img
                   :src="app.metadata.mobile_image.imgix_url"
-                  class="block max-h-32 rounded-md md:hidden"
+                  class="block max-h-32 rounded md:hidden"
                   alt="Image of media"
                 />
               </div>
@@ -116,10 +116,10 @@ import {
   CompassIcon,
   DownloadIcon,
   HeartIcon,
-} from "vue-feather-icons";
+} from 'vue-feather-icons'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     ArrowRightIcon,
     CompassIcon,
@@ -130,9 +130,9 @@ export default {
     app: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>

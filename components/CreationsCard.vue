@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="app.metadata.url"
-    class="w-full cursor-pointer rounded-3xl bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+    class="w-full cursor-pointer rounded-md bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
   >
     <a
       :href="app.metadata.url"
@@ -13,7 +13,7 @@
         <header class="flex justify-between">
           <img
             :src="app.metadata.cover.imgix_url"
-            class="h-full w-full rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-none"
+            class="h-full w-full rounded-bl-none rounded-tr-md rounded-tl-md rounded-br-none"
             alt="Image of media"
           />
         </header>
@@ -26,12 +26,12 @@
             </h4>
             <compass-icon
               v-if="app.metadata.website"
-              class="text-neutral-700 dark:text-neutral-300 mt-1"
+              class="mt-1 text-neutral-700 dark:text-neutral-300"
               size="1x"
             ></compass-icon>
             <download-icon
               v-if="app.metadata.download"
-              class="text-neutral-700 dark:text-neutral-300 mt-1"
+              class="mt-1 text-neutral-700 dark:text-neutral-300"
               size="1x"
             ></download-icon>
           </div>
@@ -53,12 +53,12 @@
   <div v-else>
     <nuxt-link :to="app.metadata.to" rel="noreferrer" cursor="pointer">
       <button
-        class="w-full cursor-pointer rounded-3xl bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+        class="w-full cursor-pointer rounded-md bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
       >
         <header class="flex justify-between">
           <img
             :src="app.metadata.cover.imgix_url"
-            class="h-full w-full rounded-bl-none rounded-br-none"
+            class="h-full w-full rounded-tl-md rounded-tr-md rounded-bl-none rounded-br-none"
             alt="Image of media"
           />
         </header>
@@ -98,10 +98,10 @@ import {
   CompassIcon,
   DownloadIcon,
   HeartIcon,
-} from "vue-feather-icons";
+} from 'vue-feather-icons'
 
 export default {
-  name: "CreationsCard",
+  name: 'CreationsCard',
   components: {
     ArrowUpRightIcon,
     CompassIcon,
@@ -112,9 +112,9 @@ export default {
     app: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>

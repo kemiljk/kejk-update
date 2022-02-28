@@ -10,7 +10,7 @@
         </h3>
         <img
           :src="portfolio.metadata.featured.imgix_url"
-          class="mt-4 w-full rounded-xl"
+          class="mt-4 w-full rounded-md"
         />
       </div>
     </div>
@@ -25,12 +25,12 @@
 
 <script>
 export default {
-  name: "Portfolio",
+  name: 'Portfolio',
   props: {
     portfolio: {
       type: Object,
       default: () => {},
     },
   },
-};
+}
 </script>

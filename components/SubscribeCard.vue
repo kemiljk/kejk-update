@@ -1,8 +1,8 @@
 <template>
-  <div class="flex bg-neutral-50 dark:bg-neutral-900 rounded-3xl">
-    <div class="p-8 w-full">
+  <div class="flex rounded-md bg-neutral-50 dark:bg-neutral-900">
+    <div class="w-full p-8">
       <h3
-        class="pt-0 text-lg sm:text-xl text-neutral-800 dark:text-white font-bold mb-0"
+        class="mb-0 pt-0 text-lg font-bold text-neutral-800 dark:text-white sm:text-xl"
       >
         Subscribe to stay up-to-date
       </h3>
@@ -11,17 +11,17 @@
         method="post"
         target="popupwindow"
         onsubmit="window.open('https://buttondown.email/karl', 'popupwindow')"
-        class="embeddable-buttondown-form grid grid-cols-1 gap-2 mt-2 md:grid-cols-3 pb-4"
+        class="embeddable-buttondown-form mt-2 grid grid-cols-1 gap-2 pb-4 md:grid-cols-3"
       >
         <label for="bd-email" class="md:col-span-2">
           <span class="sr-only">Enter your email</span>
           <input
             type="email"
-            keyup.enter="submit"
+            @keyup.enter="submit"
             name="email"
             id="bd-email"
             placeholder="e.g. sly@stallone.com"
-            class="py-3 px-3 w-full rounded-lg bg-white dark:bg-black border-2 border-neutral-200 dark:border-neutral-700 text-neutral-800 dark:text-neutral-50 font-medium focus:border-indigo-500 focus:border-2 focus:outline-none"
+            class="w-full rounded-md border border-neutral-200 bg-white py-3 px-3 text-neutral-800 focus:border focus:border-indigo-500 focus:outline-none dark:border-neutral-700 dark:bg-black dark:text-neutral-50"
             required
           />
         </label>
@@ -30,24 +30,24 @@
           <template #icon>
             <mail-icon
               size="1x"
-              class="inline-block mr-2 text-neutral-50 dark:text-neutral-900"
+              class="mr-2 inline-block text-neutral-50 dark:text-neutral-900"
             />
           </template>
-          <template #label> Newsletter </template>
+          <template #label> Subscribe </template>
         </Button>
       </form>
-      <div class="flex flex-row space-x-2 pt-2 items-center justify-start">
+      <div class="flex flex-row items-center justify-start space-x-2 pt-2">
         <a
           href="https://www.kejk.tech/rss.xml"
           target="_blank"
           rel="noreferrer"
           class="no-underline"
         >
-          <Button color="grey" class="rounded-full w-full md:w-max">
+          <Button color="grey" class="w-full rounded-full md:w-max">
             <template #icon>
               <rss-icon
                 size="1x"
-                class="inline-block mr-2 text-neutral-900 dark:text-neutral-50"
+                class="mr-2 inline-block text-neutral-900 dark:text-neutral-50"
               />
             </template>
             <template #label> RSS </template>
@@ -59,9 +59,9 @@
           rel="noreferrer"
           class="no-underline"
         >
-          <Button color="red" class=" rounded-full w-full md:w-max">
+          <Button color="red" class="w-full rounded-full md:w-max">
             <template #icon>
-              <coffee-icon size="1x" class="inline-block mr-2 text-red-100" />
+              <coffee-icon size="1x" class="mr-2 inline-block text-red-100" />
             </template>
             <template #label> Mailbrew </template>
           </Button>
@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import { RssIcon, CoffeeIcon, MailIcon } from "vue-feather-icons";
+import { RssIcon, CoffeeIcon, MailIcon } from 'vue-feather-icons'
 
 export default {
   components: {
@@ -80,5 +80,5 @@ export default {
     CoffeeIcon,
     MailIcon,
   },
-};
+}
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex rounded-full h-12 w-12">
+  <div class="flex h-12 w-12 rounded-full">
     <svg
       width="48"
       height="48"

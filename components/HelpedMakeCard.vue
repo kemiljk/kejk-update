@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full rounded-3xl border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg dark:border-neutral-800 dark:hover:bg-neutral-900"
+    class="w-full rounded-md border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg dark:border-neutral-800 dark:hover:bg-neutral-900"
   >
     <a
       :href="helpedMake.metadata.url"
@@ -12,7 +12,7 @@
         <div class="flex w-full">
           <img
             :src="helpedMake.metadata.cover.imgix_url"
-            class="mr-4 max-h-20 rounded-md sm:max-h-16"
+            class="mr-4 max-h-20 rounded sm:max-h-16"
             alt="Image of media"
           />
           <div class="flex w-full flex-col justify-between">
@@ -24,12 +24,12 @@
               </h4>
               <compass-icon
                 v-if="helpedMake.metadata.website"
-                class="text-neutral-700 dark:text-neutral-300 mt-1"
+                class="mt-1 text-neutral-700 dark:text-neutral-300"
                 size="1x"
               ></compass-icon>
               <download-icon
                 v-if="helpedMake.metadata.download"
-                class="text-neutral-700 dark:text-neutral-300 mt-1"
+                class="mt-1 text-neutral-700 dark:text-neutral-300"
                 size="1x"
               ></download-icon>
             </div>
@@ -51,10 +51,10 @@
 </template>
 
 <script>
-import { DownloadIcon, CompassIcon } from "vue-feather-icons";
+import { DownloadIcon, CompassIcon } from 'vue-feather-icons'
 
 export default {
-  name: "HelpedMake",
+  name: 'HelpedMake',
   components: {
     CompassIcon,
     DownloadIcon,
@@ -63,9 +63,9 @@ export default {
     helpedMake: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>

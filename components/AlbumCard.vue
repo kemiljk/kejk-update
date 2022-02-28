@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full cursor-pointer rounded-3xl bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+    class="w-full cursor-pointer rounded-md bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
   >
     <a
       :href="album.metadata.url"
@@ -14,7 +14,7 @@
         <header class="mb-4 flex justify-between">
           <img
             :src="album.metadata.cover.imgix_url"
-            class="max-h-24 rounded-md"
+            class="max-h-24 rounded"
             alt="Image of album"
           />
           <music-icon
@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import { MusicIcon } from "vue-feather-icons";
+import { MusicIcon } from 'vue-feather-icons'
 
 export default {
-  name: "Media",
+  name: 'Media',
   components: {
     MusicIcon,
   },
@@ -48,9 +48,9 @@ export default {
     album: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>

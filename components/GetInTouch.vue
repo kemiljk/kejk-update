@@ -1,12 +1,12 @@
 <template>
   <div
-    class="justify-center rounded-3xl border-2 border-neutral-100 bg-white dark:border-neutral-900 dark:bg-black sm:pt-0"
+    class="justify-center rounded-md border border-neutral-100 bg-white dark:border-neutral-900 dark:bg-black sm:pt-0"
   >
     <div class="mx-auto max-w-5xl">
       <div class="overflow-hidden">
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div
-            class="rounded-tl-lg rounded-tr-lg p-6 sm:mr-2 sm:rounded-tr-none sm:rounded-bl-lg"
+            class="rounded-tl-md-lg rounded-tr-md-lg sm:rounded-tr-md-none sm:rounded-bl-none-lg p-6 sm:mr-2"
           >
             <h3
               class="mb-0 pt-0 text-xl font-bold tracking-tight text-neutral-800 dark:text-white sm:text-2xl"
@@ -39,7 +39,7 @@
                 name="email"
                 id="email"
                 placeholder="e.g. arnold@schwarzenegger.com"
-                class="w-100 mt-2 rounded-lg border-2 border-neutral-200 bg-white py-3 px-3 font-medium text-neutral-800 focus:border-2 focus:border-indigo-500 focus:outline-none dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
+                class="w-100 mt-2 rounded-md border border-neutral-200 bg-white py-3 px-3 text-neutral-800 focus:border focus:border-indigo-500 focus:outline-none dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
                 required
               />
             </div>
@@ -56,7 +56,7 @@
                 id="message"
                 rows="4"
                 placeholder="Ask me anything"
-                class="w-100 mt-2 rounded-lg border-2 border-neutral-200 bg-white py-3 px-3 font-medium text-neutral-800 focus:border-2 focus:border-indigo-500 focus:outline-none dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
+                class="w-100 mt-2 rounded-md border border-neutral-200 bg-white py-3 px-3 text-neutral-800 focus:border focus:border-indigo-500 focus:outline-none dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50"
                 required
               />
             </div>
@@ -65,7 +65,7 @@
             <button
               id="submitbutton"
               type="submit"
-              class="mt-8 rounded-lg bg-black py-3 px-6 font-medium text-white transition duration-300 ease-in-out hover:bg-neutral-900 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-100 md:w-32"
+              class="mt-8 rounded-md bg-black py-3 px-6 font-medium text-white transition duration-300 ease-in-out hover:bg-neutral-900 dark:bg-white dark:text-neutral-900 hover:dark:bg-neutral-200 md:w-32"
             >
               Submit
             </button>
@@ -77,10 +77,10 @@
 </template>
 
 <script>
-import { CheckIcon } from "vue-feather-icons";
+import { CheckIcon } from 'vue-feather-icons'
 
 export default {
-  name: "GetInTouch",
+  name: 'GetInTouch',
   components: {
     CheckIcon,
   },
@@ -88,37 +88,37 @@ export default {
     return {
       socials: [
         {
-          href: "https://www.figma.com/@_kejk",
+          href: 'https://www.figma.com/@_kejk',
           figma: true,
-          title: "Figma",
+          title: 'Figma',
         },
         {
-          href: "https://www.twitter.com/_kejk",
+          href: 'https://www.twitter.com/_kejk',
           twitter: true,
-          title: "Twitter",
+          title: 'Twitter',
         },
         {
-          href: "https://www.Linkedin.com/in/kejk",
+          href: 'https://www.Linkedin.com/in/kejk',
           linkedin: true,
-          title: "LinkedIn",
+          title: 'LinkedIn',
         },
         {
-          href: "https://www.github.com/kemiljk/",
+          href: 'https://www.github.com/kemiljk/',
           github: true,
-          title: "Github",
+          title: 'Github',
         },
         {
-          href: "https://dribbble.com/_kejk",
+          href: 'https://dribbble.com/_kejk',
           dribbble: true,
-          title: "Dribbble",
+          title: 'Dribbble',
         },
         {
-          href: "https://www.ko-fi.com/kemiljk",
+          href: 'https://www.ko-fi.com/kemiljk',
           coffee: true,
-          title: "Ko-Fi",
+          title: 'Ko-Fi',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>

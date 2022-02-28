@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="plugin.title"
-    class="w-full cursor-pointer rounded-3xl bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+    class="w-full cursor-pointer rounded-md bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
   >
     <a
       :href="plugin.metadata.url"
@@ -13,7 +13,7 @@
         <header class="flex justify-between">
           <img
             :src="plugin.metadata.cover.imgix_url"
-            class="h-full w-full rounded-tl-xl rounded-tr-xl"
+            class="rounded-tl-md-xl rounded-tr-md-xl h-full w-full"
             alt="Image of media"
           />
         </header>
@@ -51,10 +51,10 @@
 </template>
 
 <script>
-import { ArrowRightIcon } from "vue-feather-icons";
+import { ArrowRightIcon } from 'vue-feather-icons'
 
 export default {
-  name: "CreationsCard",
+  name: 'CreationsCard',
   components: {
     ArrowRightIcon,
   },
@@ -62,9 +62,9 @@ export default {
     Plugin: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>

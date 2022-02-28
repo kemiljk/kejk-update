@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full rounded-3xl bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+    class="w-full rounded-md bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
   >
     <a
       :href="media.metadata.url"
@@ -29,7 +29,9 @@
               >Open source
             </Tag>
           </div>
-          <h4 class="pt-2 text-sm font-bold text-neutral-900 dark:text-neutral-100">
+          <h4
+            class="pt-2 text-sm font-bold text-neutral-900 dark:text-neutral-100"
+          >
             {{ media.title }}
           </h4>
         </div>
@@ -44,10 +46,10 @@
 </template>
 
 <script>
-import { ArrowUpRightIcon } from "vue-feather-icons";
+import { ArrowUpRightIcon } from 'vue-feather-icons'
 
 export default {
-  name: "Media",
+  name: 'Media',
   components: {
     ArrowUpRightIcon,
   },
@@ -55,9 +57,9 @@ export default {
     media: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>

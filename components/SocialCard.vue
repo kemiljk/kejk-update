@@ -1,7 +1,7 @@
 <template>
   <a :href="social.href" target="_blank" rel="noreferrer" class="no-underline">
     <button
-      class="flex items-center justify-center p-4 bg-neutral-50 dark:bg-neutral-900 hover:shadow-md rounded-2xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition ease-in-out duration-300 w-full focus:outline-none focus:ring-2 focus:ring-white"
+      class="flex w-full items-center justify-center rounded-md bg-neutral-50 p-4 transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-white dark:bg-neutral-900 dark:hover:bg-neutral-800"
     >
       <twitter-icon
         v-if="social.twitter"
@@ -21,7 +21,7 @@
       <github-icon
         v-if="social.github"
         size="1x"
-        class="dark:text-white text-black"
+        class="text-black dark:text-white"
       ></github-icon>
       <dribbble-icon
         v-if="social.dribbble"
@@ -34,7 +34,7 @@
         class="text-red-600"
       ></coffee-icon>
       <span
-        class="ml-2 text-md text-neutral-900 dark:text-neutral-50 font-medium text-xs"
+        class="text-md ml-2 text-xs font-medium text-neutral-900 dark:text-neutral-50"
       >
         {{ social.title }}
       </span>
@@ -50,10 +50,10 @@ import {
   GithubIcon,
   DribbbleIcon,
   CoffeeIcon,
-} from "vue-feather-icons";
+} from 'vue-feather-icons'
 
 export default {
-  name: "Social",
+  name: 'Social',
   components: {
     FigmaIcon,
     TwitterIcon,
@@ -66,9 +66,9 @@ export default {
     social: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>

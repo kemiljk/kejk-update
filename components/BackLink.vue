@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="backLink"
-    class="z-10 rounded-xl border-2 border-neutral-500 px-4 py-2 text-black no-underline transition duration-200 ease-in-out hover:bg-neutral-50 dark:text-white dark:hover:bg-neutral-900"
+    class="z-10 rounded-md border border-neutral-500 px-4 py-2 text-black no-underline transition duration-200 ease-in-out hover:bg-neutral-50 dark:text-white dark:hover:bg-neutral-900"
   >
     <div class="flex items-center justify-between font-medium">
       <arrow-left-icon
@@ -13,24 +13,24 @@
 </template>
 
 <script>
-import { ArrowLeftIcon } from "vue-feather-icons";
+import { ArrowLeftIcon } from 'vue-feather-icons'
 
 export default {
-  props: ["link"],
+  props: ['link'],
   components: {
     ArrowLeftIcon,
   },
   computed: {
     backLink() {
       return {
-        home: "/",
-        about: "/about",
-        thoughts: "/thoughts",
-        bookmarks: "/bookmarks",
-        uses: "/uses",
-        project: "/projects",
-      }[this.link];
+        home: '/',
+        about: '/about',
+        thoughts: '/thoughts',
+        bookmarks: '/bookmarks',
+        uses: '/uses',
+        project: '/projects',
+      }[this.link]
     },
   },
-};
+}
 </script>

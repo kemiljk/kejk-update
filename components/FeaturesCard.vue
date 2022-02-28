@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full cursor-pointer select-none rounded-3xl border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg dark:border-neutral-800 dark:hover:bg-neutral-900"
+    class="w-full cursor-pointer select-none rounded-md border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg dark:border-neutral-800 dark:hover:bg-neutral-900"
   >
     <a
       :href="feature.metadata.url"
@@ -23,7 +23,7 @@
         <p
           class="mb-0 font-mono text-sm text-neutral-700 dark:text-neutral-300"
         >
-          {{ feature.metadata.published | moment("DD/MM/YYYY") }}
+          {{ feature.metadata.published | moment('DD/MM/YYYY') }}
         </p>
         <p class="mb-0 font-mono text-sm text-indigo-500">
           {{ feature.metadata.type }}
@@ -34,10 +34,10 @@
 </template>
 
 <script>
-import { ArrowUpRightIcon } from "vue-feather-icons";
+import { ArrowUpRightIcon } from 'vue-feather-icons'
 
 export default {
-  name: "Feature",
+  name: 'Feature',
   components: {
     ArrowUpRightIcon,
   },
@@ -45,9 +45,9 @@ export default {
     feature: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full cursor-pointer rounded-3xl bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+    class="w-full cursor-pointer rounded-md bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
   >
     <nuxt-link
       :to="{
@@ -14,7 +14,7 @@
         <header class="flex justify-between">
           <img
             :src="portfolio.metadata.hero.imgix_url"
-            class="h-full w-full rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-none"
+            class="h-full w-full rounded-bl-none rounded-tr-md rounded-tl-md rounded-br-none"
             alt="Image of media"
           />
         </header>
@@ -26,7 +26,8 @@
               {{ portfolio.title }}
             </h4>
             <arrow-right-icon
-              class="text-neutral-700 dark:text-neutral-300 mt-1" size="1x"
+              class="mt-1 text-neutral-700 dark:text-neutral-300"
+              size="1x"
             ></arrow-right-icon>
           </div>
           <p
@@ -41,10 +42,10 @@
 </template>
 
 <script>
-import { ArrowRightIcon } from "vue-feather-icons";
+import { ArrowRightIcon } from 'vue-feather-icons'
 
 export default {
-  name: "Portfolio",
+  name: 'Portfolio',
   components: {
     ArrowRightIcon,
   },
@@ -52,9 +53,9 @@ export default {
     portfolio: {
       type: Object,
       default: () => {
-        "No posts are loaded";
+        'No posts are loaded'
       },
     },
   },
-};
+}
 </script>
