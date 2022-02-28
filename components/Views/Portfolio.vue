@@ -32,5 +32,27 @@ export default {
       default: () => {},
     },
   },
+  meta() {
+    const metaData = {
+      type: 'project',
+      title: this.portfolio.title,
+      description: this.portfolio.metadata.description,
+      url: 'https://kejk.tech/projects/' + `${this.$route.params.id}`,
+      mainImage: this.portfolio.metadata.featured.imgix_url,
+    }
+    return getSiteMeta(metaData)
+  },
+  head() {
+    return {
+      title: this.portfolio.title,
+      meta: [...this.meta],
+      link: [
+        {
+          rel: 'canonical',
+          href: `https://kejk.tech/projects/${this.$route.params.id}`,
+        },
+      ],
+    }
+  },
 }
 </script>

@@ -91,8 +91,6 @@ export default {
         title: 'Uses | KEJK',
         description: "Karl's Product Design and Development EDC and equipment",
         url: 'https://kejk.tech/uses',
-        mainImage:
-          'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
       }
       return getSiteMeta(metaData)
     },
