@@ -3,7 +3,7 @@ const url = 'https://kejk.tech'
 const title = 'Karl Emil James Koch'
 const description =
   'Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.'
-const mainImage = '../static/meta.png'
+const mainImage = '/static/meta.png'
 const twitterSite = '@_kejk'
 const twitterCard = 'summary_large_image'
 export default (meta) => {
