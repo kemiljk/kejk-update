@@ -22,6 +22,7 @@
       <Header class="pt-24 text-left md:text-center">/uses</Header>
       <div class="mx-auto flex max-w-3xl flex-row pt-8">
         <keep-alive>
+          <Loading v-if="this.loading === true" />
           <ViewsUses :uses="uses" />
         </keep-alive>
       </div>

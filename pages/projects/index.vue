@@ -20,6 +20,10 @@
     </Nav>
     <div class="mx-auto max-w-5xl px-4">
       <Header class="pt-24 text-left md:text-center">/projects</Header>
+      <Loading
+        v-if="this.loading === true"
+        class="flex w-full justify-center"
+      />
       <div class="mt-4 flex flex-row">
         <div class="grid w-full gap-4 sm:grid-cols-2">
           <div v-for="portfolio in portfolios" :key="portfolio.id">

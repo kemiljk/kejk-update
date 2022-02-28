@@ -20,6 +20,7 @@
       <Header class="pt-24 text-left md:text-center">/about</Header>
       <div class="flex flex-row pt-8">
         <keep-alive>
+          <Loading v-if="this.loading === true" />
           <ViewsAbout :about="about" />
         </keep-alive>
       </div>

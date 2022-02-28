@@ -25,6 +25,7 @@
           Apps, plugins and tools I've built, available for free
         </template>
       </Subheader>
+      <Loading v-if="this.loading === true" />
       <div class="flex">
         <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
           <div v-for="app in apps" :key="app.title">

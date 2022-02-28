@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
-        display: 'Newsreader',
+        display: '"Space Grotesk"',
         mono: ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono],
       },
       backgroundColor: ['active'],
