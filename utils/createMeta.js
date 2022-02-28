@@ -1,13 +1,3 @@
-// const type = 'website'
-// const url = 'https://kejk.tech'
-// const title = 'Karl Emil James Koch'
-// const description =
-//   'Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.'
-// const mainImage =
-//   'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png'
-// const twitterSite = '@_kejk'
-// const twitterCard = 'summary_large_image'
-
 export const createMeta = ({ title, description, imageUrl, url }) => {
   const metaObj = {
     meta: [

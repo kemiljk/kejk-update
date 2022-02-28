@@ -13,13 +13,8 @@
         <div class="flex w-full">
           <div class="mr-4 sm:w-1/3">
             <img
-              :src="app.metadata.cover.imgix_url"
-              class="hidden max-h-32 rounded md:block"
-              alt="Image of media"
-            />
-            <img
               :src="app.metadata.mobile_image.imgix_url"
-              class="block max-h-32 rounded md:hidden"
+              class="block max-h-32 rounded"
               alt="Image of media"
             />
           </div>
@@ -67,13 +62,8 @@
             <div class="flex w-full">
               <div class="mr-4 sm:w-1/3">
                 <img
-                  :src="app.metadata.cover.imgix_url"
-                  class="hidden max-h-32 rounded md:block"
-                  alt="Image of media"
-                />
-                <img
                   :src="app.metadata.mobile_image.imgix_url"
-                  class="block max-h-32 rounded md:hidden"
+                  class="block max-h-32 rounded"
                   alt="Image of media"
                 />
               </div>

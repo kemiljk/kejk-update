@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="utility.metadata.url"
-    class="max-w-5/6 w-full cursor-pointer rounded-md bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+    class="max-w-5/6 w-full cursor-pointer rounded-md bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800 md:min-h-[142px]"
   >
     <a
       :href="utility.metadata.url"
