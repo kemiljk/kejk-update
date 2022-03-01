@@ -79,8 +79,6 @@ export default {
       title: 'Thoughts | KEJK',
       description:
         'Thoughts on Design and Development from here and around the web.',
-      imageUrl:
-        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png?1',
       url: 'https://kejk.tech/thoughts',
       link: [{ rel: 'canonical', href: 'https://kejk.tech/thoughts' }],
     })

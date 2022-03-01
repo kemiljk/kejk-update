@@ -17,19 +17,17 @@ export const createMeta = ({ title, description, imageUrl, url }) => {
 				content: description,
 			},
 			{
-				hid: 'twitter:image:src',
-				name: 'twitter:image:src',
-				content: imageUrl,
-			},
-			{
+				hid: 'twitter:image',
 				name: 'twitter:image',
 				content: imageUrl,
 			},
 			{
+				hid: 'twitter:site',
 				name: 'twitter:site',
 				content: '@_kejk',
 			},
 			{
+				hid: 'twitter:card',
 				name: 'twitter:card',
 				content: 'summary_large_image',
 			},
