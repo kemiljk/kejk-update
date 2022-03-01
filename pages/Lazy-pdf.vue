@@ -240,7 +240,7 @@ export default {
       description:
         'Effortlessly create a PDF from a set of selected images through an interfaceless system with only the Finder selection UI.',
       imageUrl:
-        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+        'https://imgix.cosmicjs.com/483f5be0-94eb-11ec-96f2-43bdd99faa64-Lazy-PDF.png',
       url: 'https://kejk.tech/lazy-pdf',
       link: [{ rel: 'canonical', href: 'https://kejk.tech/lazy-pdf' }],
     })

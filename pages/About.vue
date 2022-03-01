@@ -85,7 +85,7 @@ export default {
       description:
         'A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.',
       imageUrl:
-        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+        'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png?1',
       url: 'https://kejk.tech/about',
       link: [{ rel: 'canonical', href: 'https://kejk.tech/about' }],
     })
