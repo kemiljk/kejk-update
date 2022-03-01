@@ -87,7 +87,7 @@ export default {
 		link: [
 			{ rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
 			{ rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-			{ rel: 'mask-icon', href: '/favicon.svg', color: '#475569' },
+			{ rel: 'mask-icon', href: '/mask-icon.svg', color: '#475569' },
 			{ rel: 'manifest', href: '/manifest.webmanifest' },
 			{
 				rel: 'apple-touch-icon',
