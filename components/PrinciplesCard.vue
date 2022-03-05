@@ -1,7 +1,5 @@
 <template>
-	<div
-		class="w-full rounded-lg bg-neutral-50 p-4 hover:shadow hover:ring hover:ring-neutral-300 dark:bg-neutral-900 dark:hover:ring-neutral-600"
-	>
+	<div class="w-full rounded-lg bg-neutral-50 p-4 dark:bg-neutral-900">
 		<header class="items-top flex justify-start">
 			<h3
 				class="mb-0 w-full pt-0 text-lg font-bold text-black dark:text-white"
