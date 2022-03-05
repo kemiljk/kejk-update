@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="supports-backdrop-blur:bg-white/95 supports-backdrop-blur:dark:bg-black/95 absolute top-0 z-50 mx-auto h-16 w-full bg-white dark:bg-black"
+    class="supports-backdrop-blur:bg-white/95 supports-backdrop-blur:dark:bg-black/95 absolute bottom-0 z-50 mx-auto h-16 w-full bg-white dark:bg-black"
   >
     <div
       class="background-blur fixed z-50 mx-auto w-full flex-none pl-4 duration-500 sm:pl-6 lg:px-8"
