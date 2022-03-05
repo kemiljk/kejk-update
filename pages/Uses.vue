@@ -91,6 +91,8 @@ export default {
 			description:
 				'Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.',
 			url: 'https://kejk.tech/uses',
+			imageUrl:
+				'https://imgix.cosmicjs.com/85dec8b0-9cb0-11ec-b20b-ad2fdaf5e1bc-meta-uses.png',
 			link: [{ rel: 'canonical', href: 'https://kejk.tech/uses' }],
 		})
 	},

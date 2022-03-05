@@ -55,7 +55,7 @@ export default {
 				hid: 'og:image',
 				property: 'og:image',
 				content:
-					'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png',
+					'https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png',
 			},
 			{ property: 'og:image:width', content: '740' },
 			{ property: 'og:image:height', content: '300' },
@@ -81,7 +81,7 @@ export default {
 				hid: 'twitter:image',
 				name: 'twitter:image',
 				content:
-					'https://imgix.cosmicjs.com/0321b940-98bf-11ec-8bb7-91577e4f4933-meta.png?1',
+					'https://imgix.cosmicjs.com/aa1741b0-9c8f-11ec-b20b-ad2fdaf5e1bc-2022meta.png',
 			},
 		],
 		link: [
@@ -156,9 +156,6 @@ export default {
 			{
 				rel: 'stylesheet',
 				href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap',
-			},
-			{
-				/* href: "https://fonts.googleapis.com/css2?family=Rakkas&display=swap", */
 			},
 		],
 	},

@@ -83,6 +83,8 @@ export default {
 			description:
 				'Thoughts on Design and Development from here and around the web.',
 			url: 'https://kejk.tech/thoughts',
+			imageUrl:
+				'https://imgix.cosmicjs.com/85c80c60-9cb0-11ec-b20b-ad2fdaf5e1bc-meta-thoughts.png',
 			link: [{ rel: 'canonical', href: 'https://kejk.tech/thoughts' }],
 		})
 	},

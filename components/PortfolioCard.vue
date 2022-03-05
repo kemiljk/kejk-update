@@ -1,6 +1,7 @@
 <template>
 	<div
 		class="w-full cursor-pointer rounded-lg bg-neutral-50 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow hover:ring hover:ring-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:hover:ring-neutral-600"
+		v-if="portfolio.metadata"
 	>
 		<nuxt-link
 			:to="{
