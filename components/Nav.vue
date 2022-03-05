@@ -1,7 +1,7 @@
 <template>
 	<nav>
 		<div
-			class="bg-gray-100/50 dark:bg-gray-800/50 fixed bottom-0 z-50 mx-auto h-16 w-full flex-none duration-500 md:top-0"
+			class="bg-neutral-100/75 dark:bg-neutral-800/75 fixed bottom-0 z-50 mx-auto h-16 w-full flex-none duration-500 md:top-0"
 		>
 			<div
 				class="md:overflow-none scrollbar-hidden background-blur flex h-16 w-full items-center justify-between overflow-x-auto"
