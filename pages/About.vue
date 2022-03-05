@@ -83,6 +83,11 @@ const bucket = api.bucket({
 })
 
 export default {
+	name: 'About',
+	components: {
+		ArrowUpRightIcon,
+		ArrowRightIcon,
+	},
 	head() {
 		return createMeta({
 			title: 'About | KEJK',
@@ -93,10 +98,6 @@ export default {
 				'https://imgix.cosmicjs.com/85afa260-9cb0-11ec-b20b-ad2fdaf5e1bc-meta-about.png',
 			link: [{ rel: 'canonical', href: 'https://kejk.tech/about' }],
 		})
-	},
-	components: {
-		ArrowUpRightIcon,
-		ArrowRightIcon,
 	},
 	data() {
 		return {

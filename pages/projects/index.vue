@@ -71,6 +71,12 @@ const bucket = api.bucket({
 
 export default {
 	name: 'PortfolioGrid',
+	components: {
+		InfoIcon,
+		MailIcon,
+		ArrowRightIcon,
+		ArrowUpRightIcon,
+	},
 	head() {
 		return createMeta({
 			title: 'Projects | KEJK',
@@ -81,12 +87,6 @@ export default {
 				'https://imgix.cosmicjs.com/85d48f80-9cb0-11ec-b20b-ad2fdaf5e1bc-meta-projects.png',
 			link: [{ rel: 'canonical', href: 'https://kejk.tech/projects' }],
 		})
-	},
-	components: {
-		InfoIcon,
-		MailIcon,
-		ArrowRightIcon,
-		ArrowUpRightIcon,
 	},
 	data() {
 		return {
