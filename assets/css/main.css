@@ -11,14 +11,8 @@
 		scrollbar-width: none;
 	}
 
-	@support (backdrop-filter: blur(20px)) {
-		.background-blur {
-			backdrop-filter: blur(20px);
-		}
-	}
-
 	.background-blur {
-		background-color: rgba(0, 0, 0, 0.5);
+		backdrop-filter: blur(20px);
 	}
 
 	a {
