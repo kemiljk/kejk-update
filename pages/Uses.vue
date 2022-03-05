@@ -85,11 +85,12 @@ const bucket = api.bucket({
 })
 
 export default {
+	name: 'Uses',
 	head() {
 		return createMeta({
 			title: 'Uses | KEJK',
 			description:
-				'Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.',
+				'A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.',
 			url: 'https://kejk.tech/uses',
 			imageUrl:
 				'https://imgix.cosmicjs.com/85dec8b0-9cb0-11ec-b20b-ad2fdaf5e1bc-meta-uses.png',
