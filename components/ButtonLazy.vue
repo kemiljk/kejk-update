@@ -1,6 +1,6 @@
 <template>
 	<button
-		class="ease flex w-full items-center justify-center rounded-2xl px-6 py-4 text-center font-medium no-underline transition duration-500"
+		class="ease flex w-full items-center justify-center rounded-xl px-6 py-4 text-center font-medium no-underline transition duration-500"
 		:class="colorClasses"
 		@click="updateDownloads()"
 	>
