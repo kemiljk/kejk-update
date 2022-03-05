@@ -21,7 +21,7 @@
         class="flex w-max items-center justify-center rounded-full border border-neutral-200 bg-neutral-50 px-4 py-2 font-normal text-neutral-900 no-underline transition duration-200 ease-in-out dark:border-neutral-800 dark:bg-neutral-900 dark:text-white md:block md:hover:bg-neutral-200 md:hover:text-black md:dark:hover:bg-neutral-800 md:dark:hover:text-white"
         :class="[
           {
-            'border border-transparent bg-neutral-300 text-neutral-900 dark:border-transparent dark:bg-neutral-700 dark:text-white md:hover:bg-neutral-300 md:dark:hover:bg-neutral-700':
+            'border-2 border-teal-500 bg-neutral-100 text-neutral-900 dark:border-teal-500 dark:bg-neutral-900 dark:text-white md:hover:bg-neutral-300 md:dark:hover:bg-neutral-700':
               isActive,
           },
         ]"
