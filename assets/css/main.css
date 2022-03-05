@@ -11,6 +11,16 @@
 		scrollbar-width: none;
 	}
 
+	@support (backdrop-filter: blur(20px)) {
+		.background-blur {
+			backdrop-filter: blur(20px);
+		}
+	}
+
+	.background-blur {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
 	a {
 		@apply font-semibold text-black underline decoration-teal-500 decoration-2 underline-offset-4 dark:text-white;
 	}

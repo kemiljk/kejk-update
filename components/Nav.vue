@@ -1,7 +1,7 @@
 <template>
 	<nav>
 		<div
-			class="fixed bottom-0 z-50 mx-auto h-16 w-full flex-none pl-4 backdrop-blur-lg duration-500 sm:pl-6 md:top-0 lg:px-8"
+			class="background-blur fixed bottom-0 z-50 mx-auto h-16 w-full flex-none pl-4 backdrop-blur-sm duration-500 sm:pl-6 md:top-0 lg:px-8"
 		>
 			<div
 				class="md:overflow-none scrollbar-hidden flex h-16 w-full items-center justify-between overflow-x-auto"
