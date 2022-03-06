@@ -36,7 +36,7 @@
 						></download-icon>
 					</div>
 					<p
-						class="mb-0 pt-2 text-sm font-normal text-neutral-500 dark:text-neutral-400"
+						class="mb-0 text-sm font-normal text-neutral-500 dark:text-neutral-400"
 					>
 						{{ app.metadata.subtitle }}
 					</p>
