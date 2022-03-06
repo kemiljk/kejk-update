@@ -21,7 +21,7 @@
 						name="email"
 						id="bd-email"
 						placeholder="e.g. sly@stallone.com"
-						class="bg-neutral-100 dark:bg-neutral-800 w-full rounded-lg border border-neutral-200 py-3 px-3 text-neutral-800 focus:outline-none focus:border focus:border-teal-500 dark:border-neutral-700 dark:text-neutral-50 active:ring-2 active:ring-teal-500"
+						class="bg-neutral-100 dark:bg-neutral-800 w-full rounded-lg border border-neutral-200 py-3 px-3 text-neutral-800 focus:outline-none focus:border focus:border-teal-500 dark:border-neutral-700 dark:text-neutral-50 focus:ring-2 focus:ring-teal-500"
 						required
 					/>
 				</label>
