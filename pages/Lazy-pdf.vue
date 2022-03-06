@@ -18,7 +18,7 @@
 		</Nav>
 		<div class="mx-auto px-4">
 			<div class="container mx-auto max-w-5xl pb-2">
-				<div class="flex flex-row pt-4 pb-8 md:pt-16">
+				<div class="flex flex-row pt-4 pb-8 md:pt-24">
 					<BackLink link="home"> Back home </BackLink>
 				</div>
 				<Header class="pt-4 text-left md:text-center">/lazy-pdf</Header>

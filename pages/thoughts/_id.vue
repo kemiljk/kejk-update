@@ -20,7 +20,7 @@
 		</Nav>
 		<div class="mx-auto px-4" id="THOUGHTS">
 			<div class="container mx-auto max-w-3xl pb-2">
-				<div class="flex flex-row pt-4 pb-8 md:pt-16">
+				<div class="flex flex-row pt-4 pb-8 md:pt-24">
 					<BackLink link="thoughts"> Back to all posts </BackLink>
 				</div>
 				<keep-alive>
