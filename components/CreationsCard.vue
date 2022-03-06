@@ -35,7 +35,12 @@
 							size="1x"
 						></download-icon>
 					</div>
-					<div class="flex space-x-2 pt-1">
+					<p
+						class="mb-0 pt-2 text-sm font-normal text-neutral-500 dark:text-neutral-400"
+					>
+						{{ app.metadata.subtitle }}
+					</p>
+					<div class="flex space-x-2 pt-4">
 						<Tag color="yellow" v-if="app.metadata.ios">iOS</Tag>
 						<Tag color="blue" v-if="app.metadata.figma">Figma</Tag>
 						<Tag color="pink" v-if="app.metadata.figjam"
@@ -45,11 +50,6 @@
 							>macOS</Tag
 						>
 					</div>
-					<p
-						class="mb-0 pt-8 text-sm font-normal text-neutral-500 dark:text-neutral-400"
-					>
-						{{ app.metadata.subtitle }}
-					</p>
 				</div>
 			</div>
 		</a>
