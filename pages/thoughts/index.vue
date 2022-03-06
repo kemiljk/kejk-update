@@ -19,7 +19,7 @@
 			<NavItem to="/uses">Uses</NavItem>
 		</Nav>
 		<div class="mx-auto max-w-3xl px-4" id="THOUGHTS">
-			<Header class="pt-4 text-left md:pt-16 md:text-center"
+			<Header class="pt-4 text-left md:pt-24 md:text-center"
 				>/thoughts</Header
 			>
 			<Subheader class="text-left md:text-center">

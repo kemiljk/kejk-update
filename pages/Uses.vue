@@ -17,7 +17,7 @@
 			<NavItem to="/uses" isActive v-scroll-to="'#USES'">Uses</NavItem>
 		</Nav>
 		<div class="mx-auto max-w-5xl px-4" id="USES">
-			<Header class="pt-4 text-left md:pt-16 md:text-center"
+			<Header class="pt-4 text-left md:pt-24 md:text-center"
 				>/uses</Header
 			>
 			<div class="mx-auto flex max-w-3xl flex-row pt-8">
