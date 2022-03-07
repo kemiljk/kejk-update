@@ -84,7 +84,7 @@
 					>
 						{{ app.metadata.subtitle }}
 					</p>
-					<div class="flex space-x-2 pt-2">
+					<div class="flex space-x-2 pt-4">
 						<Tag color="yellow" v-if="app.metadata.ios">iOS</Tag>
 						<Tag color="blue" v-if="app.metadata.figma">Figma</Tag>
 						<Tag color="pink" v-if="app.metadata.figjam"
