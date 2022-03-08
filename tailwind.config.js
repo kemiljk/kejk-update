@@ -13,7 +13,7 @@ module.exports = {
       fontFamily: {
         sans: ['"Spline Sans"', ...defaultTheme.fontFamily.sans],
         display: '"Space Grotesk"',
-        mono: ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono],
+        mono: ['"Space Mono"', ...defaultTheme.fontFamily.mono],
       },
       backgroundColor: ['active'],
     },
