@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Spline Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
         display: '"Space Grotesk"',
         mono: ['"Space Mono"', ...defaultTheme.fontFamily.mono],
       },
