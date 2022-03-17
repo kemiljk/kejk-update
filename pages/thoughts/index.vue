@@ -24,8 +24,7 @@
 			>
 			<Subheader class="text-left md:text-center">
 				<template #text>
-					Thoughts about design, development and the intersection of
-					the two.
+					Thoughts about design, development, music and a bunch of random musings inbetween.
 				</template>
 			</Subheader>
 			<SubscribeCard />
