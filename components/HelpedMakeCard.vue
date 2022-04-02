@@ -49,6 +49,7 @@
 					>Code</Tag
 				>
 				<Tag color="pink" v-if="helpedMake.metadata.brand">Brand</Tag>
+				<Tag color="blue" v-if="helpedMake.metadata.consultancy">Consultancy</Tag>
 			</div>
 		</a>
 	</div>
