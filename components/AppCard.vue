@@ -24,13 +24,13 @@
 								<Tag color="blue" v-if="app.metadata.figma"
 									>Figma</Tag
 								>
-								<Tag color="pink" v-if="app.metadata.figjam"
+								<Tag color="purple" v-if="app.metadata.figjam"
 									>FigJam</Tag
 								>
 								<Tag color="yellow" v-if="app.metadata.ios"
 									>iOS
 								</Tag>
-								<Tag color="purple" v-if="app.metadata.macos"
+								<Tag color="pink" v-if="app.metadata.macos"
 									>macOS
 								</Tag>
 							</div>
