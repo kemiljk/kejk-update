@@ -71,6 +71,10 @@
 		@apply font-mono;
 	}
 
+	figcaption {
+		@apply text-sm italic text-neutral-500 dark:text-neutral-300;
+	}
+
 	input {
 		-webkit-appearance: none;
 		-moz-appearance: none;
