@@ -86,9 +86,7 @@
 									<Tag color="yellow" v-if="app.metadata.ios"
 										>iOS
 									</Tag>
-									<Tag
-										color="purple"
-										v-if="app.metadata.macos"
+									<Tag color="pink" v-if="app.metadata.macos"
 										>macOS
 									</Tag>
 								</div>
